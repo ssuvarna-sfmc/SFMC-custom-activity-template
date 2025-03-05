@@ -4,7 +4,7 @@
     {
         "icon": "images/icon.png",
         "iconSmall": "images/iconSmall.png",
-        "category": "<CATEGORY_OF_APP_BASED_ON_DOCS>"
+        "category": "Custom"
     },
 
     "type": "REST",
@@ -22,11 +22,30 @@
         "execute":
         {
             "inArguments": [
-              { 
-                "SAMPLE_PARAM": "SAMPLE PARAM DATA FROM CONFIG.JSON"
+              
+               {
+            "staticValue": {
+              "dataType": "Number",
+              "isNullable": false,
+              "direction": "in"
+            },
+            "databoundEmailAddress": {
+              "dataType": "Email",
+              "isNullable": false,
+              "direction": "in"
+            }
+          
               }
             ],
-            "outArguments": [],
+            "outArguments": [ 
+{
+            "returnValue": {
+              "dataType": "Text",
+              "isNullable": false,
+              "direction": "out"
+            }
+          }
+],
             "url": "https://sfmc-support-testing-5174c922593a.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
             "body": "",
@@ -77,8 +96,29 @@
     {
         "arguments":{
             "execute": {
-                "inArguments": [],
-                "outArguments": []
+               "inArguments": [
+          {
+            "staticValue": {
+              "dataType": "Number",
+              "isNullable": false,
+              "direction": "in"
+            },
+            "databoundEmailAddress": {
+              "dataType": "Email",
+              "isNullable": false,
+              "direction": "in"
+            }
+          }
+        ],
+        "outArguments": [
+          {
+            "returnValue": {
+              "dataType": "Text",
+              "isNullable": false,
+              "direction": "out"
+            }
+          }
+        ]
             }
         }
     }
