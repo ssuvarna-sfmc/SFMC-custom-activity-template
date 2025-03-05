@@ -12,8 +12,8 @@
     {
         "en-US":
         {
-            "name": "<NAME_OF_APP>",
-            "description": "<DESC_OF_APP>",
+            "name": "SFMC Support Custom Activity",
+            "description": "SFMC Support Custom Activity",
             "step1Label": "Configure Activity"
         }
     },
@@ -27,7 +27,7 @@
               }
             ],
             "outArguments": [],
-            "url": "<HTTPS_URL_OF_APP>/journeybuilder/execute",
+            "url": "https://sfmc-support-testing-5174c922593a.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -39,28 +39,28 @@
     
     "configurationArguments":
     {
-        "applicationExtensionKey": "<APP EXTENSION KEY>",
+        "applicationExtensionKey": "c53ab39a-3025-4c7b-b392-6bf017c7603b",
         "save":
         {
-            "url": "<HTTPS_URL_OF_APP>/journeybuilder/save",
+            "url": "https://sfmc-support-testing-5174c922593a.herokuapp.com/journeybuilder/save",
             "verb": "POST",
             "useJwt": true
         },
         "publish":
         {
-            "url": "<HTTPS_URL_OF_APP>/journeybuilder/publish",
+            "url": "https://sfmc-support-testing-5174c922593a.herokuapp.com/journeybuilder/publish",
             "verb": "POST",
             "useJwt": true
         },
         "stop":
         {
-            "url": "<HTTPS_URL_OF_APP>/journeybuilder/stop",
+            "url": "https://sfmc-support-testing-5174c922593a.herokuapp.com/journeybuilder/stop",
             "verb": "POST",
             "useJwt": true
         },
         "validate":
         {
-            "url": "<HTTPS_URL_OF_APP>/journeybuilder/validate",
+            "url": "https://sfmc-support-testing-5174c922593a.herokuapp.com/journeybuilder/validate",
             "verb": "POST",
             "useJwt": true
         }
